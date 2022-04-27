@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+header {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+main {
+  color: #fff;
+}
+
+header .line-blu {
+  height: 20px;
+  background-color: #0282f9;
+  color: white;
+}
+header .line-blu .container-line {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+header .line-blu .container-line ul li {
+  margin-left: 60px;
+  line-height: 20px;
+  display: inline-block;
+}
+header .line-blu .container-line ul li a {
+  color: white;
+  text-decoration: none;
+}
+header .line-blu .container-line ul li a:hover {
+  text-decoration: underline;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+header .logo img {
+  width: 70px;
+  height: 70px;
+  margin: 10px 0;
+}
+header .header-menu {
+  flex-shrink: 0;
+  height: 100px;
+}
+header .header-menu ul {
+  display: flex;
+  align-items: center;
+  line-height: 95px;
+}
+header .header-menu ul li:first-child {
+  margin-left: 0;
+}
+header .header-menu ul li {
+  display: inline-block;
+  margin-left: 1.2rem;
+  border-bottom: 5px solid transparent;
+  transition: border-color 0.25s;
+}
+header .header-menu ul li:hover, header .header-menu ul li.active {
+  border-color: #0282f9;
+}
+header .header-menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #5c5c5c;
+}
+header .header-menu ul li a:hover, header .header-menu ul li a.active {
+  color: #0282f9;
+}
+
+.jumbo {
+  height: 330px;
+  background-image: url("../images/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .footer-top {
+  background-image: url("../images/footer-bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer-top .container {
+  justify-content: space-between;
+  align-items: stretch;
+}
+footer .footer-top .container .footer-top-left {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem 0 2.5rem;
+}
+footer .footer-top .container .footer-top-left section {
+  padding-right: 1rem;
+}
+footer .footer-top .container .footer-top-left section ul {
+  list-style: none;
+}
+footer .footer-top .container .footer-top-left section ul a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #7b7c7b;
+  font-size: 0.9rem;
+  transition: color 0.25s;
+}
+footer .footer-top .container .footer-top-left section ul a:hover {
+  color: #fff;
+}
+footer .footer-top .container .footer-top-left section ul h3 {
+  padding: 1rem 0;
+  color: #fff;
+}
+footer .footer-top .footer-top-right {
+  flex: 0 0 45%;
+  background-image: url("../images/dc-logo-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+footer .footer-social {
+  background-color: #303030;
+  padding: 1.5rem 0;
+}
+footer .footer-social .container {
+  height: 40px;
+}
+footer .footer-social .container .btn-footer {
+  color: #fff;
+  border: 2px solid #0282f9;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  margin-right: auto;
+  cursor: pointer;
+}
+footer .footer-social .container .container-follow {
+  display: flex;
+  align-items: center;
+  color: #0282f9;
+  font-weight: bold;
+}
+footer .footer-social .container .container-follow img {
+  margin-left: 1rem;
+}

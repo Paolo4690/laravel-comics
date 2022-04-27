@@ -1,0 +1,150 @@
+//
+@import './partial/variables';
+@import './partial/reset';
+@import './partial/general';
+
+header {
+    .line-blu {
+        height: 20px;
+        background-color: $blu_color;
+        color: white;
+        .container-line {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin: 0 auto;
+        max-width: 1000px;
+        ul {
+            li {
+                margin-left: 60px;
+                line-height: 20px;
+                display: inline-block;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        }
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        img {
+            width: 70px;
+            height: 70px;
+            margin: 10px 0;
+        }
+    }
+    .header-menu {
+      flex-shrink: 0;
+      height: 100px;
+        ul {
+          display: flex;
+          align-items: center;
+          line-height: 95px;
+            li:first-child {
+              margin-left: 0;
+            }
+            li {
+              display: inline-block;
+              margin-left: 1.2rem;
+              border-bottom: 5px solid transparent;
+              transition: border-color .25s;
+                &:hover,
+                &.active {
+                    border-color: $blu_color;
+                }
+
+                a {
+                  display: inline-block;
+                  text-decoration: none;
+                  color: $grey_color;
+                    &:hover,
+                    &.active {
+                      color: $blu_color;
+                    }
+                }
+            }
+        }
+    }
+}
+.jumbo {
+    height: 330px;
+    background-image: url('../images/jumbotron.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    .footer-top {
+        background-image: url('../images/footer-bg.jpg');
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .container {
+            justify-content: space-between;
+            align-items: stretch;
+            .footer-top-left {
+                display: flex;
+                align-items: flex-start;
+                padding: 1.5rem 0 2.5rem ;
+                section {
+                padding-right: 1rem;
+                    ul {
+                        list-style: none;
+                        a {
+                        text-decoration: none;
+                        font-weight: 500;
+                        color: $grey_color_footer;
+                        font-size: .9rem;
+                        transition: color .25s;
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                        h3 {
+                        padding: 1rem 0;
+                        color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-top-right{
+            flex: 0 0 45%;
+            background-image: url('../images/dc-logo-bg.png');
+            background-position: center;
+            background-size: cover;
+        }
+      }
+      .footer-social {
+            background-color: $bg_social;
+            padding: 1.5rem 0;
+            .container {
+            height: 40px;
+            .btn-footer{
+                color: #fff;
+                border: 2px solid $blu_color;
+                padding: .5rem .7rem;
+                font-size: .9rem;
+                margin-right: auto;
+                cursor: pointer;
+            }
+            .container-follow {
+                display: flex;
+                align-items: center;
+                color: $blu_color;
+                font-weight: bold;
+                img {
+                margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
