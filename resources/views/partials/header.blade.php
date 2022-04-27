@@ -13,23 +13,23 @@
         </div>
         <div class="header-menu">
         <ul>
-            <li>
-                <a href="#">CHARACTERS</a>
+            <li class="{{ Route::current()->getName() == 'characters' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'characters' ? 'active' : '' }}" href="{{ route('characters') }}">CHARACTERS</a>
             </li>
-            <li class="active">
-                <a class="active" href="#">COMICS</a>
+            <li class="{{ Route::current()->getName() == 'home' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">COMICS</a>
             </li>
-            <li>
-                <a href="#">MOVIES</a>
+            <li class="{{ Route::current()->getName() == 'movies' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'movies' ? 'active' : '' }}" href="{{ route('movies') }}">MOVIES</a>
             </li>
-            <li>
-                <a href="#">TV</a>
+            <li class="{{ Route::current()->getName() == 'tv' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'tv' ? 'active' : '' }}" href="{{ route('tv') }}">TV</a>
             </li>
-            <li>
-                <a href="#">GAMES</a>
+            <li class="{{ Route::current()->getName() == 'games' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'games' ? 'active' : '' }}" href="{{ route('games') }}">GAMES</a>
             </li>
-            <li>
-                <a href="#">COLLECTIBLES</a>
+            <li class="{{ Route::current()->getName() == 'collectibles' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'collectibles' ? 'active' : '' }}" href="{{ route('collectibles') }}">COLLECTIBLES</a>
             </li>
             <li>
                 <a href="#">VIDEOS</a>

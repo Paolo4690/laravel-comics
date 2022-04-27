@@ -157,6 +157,32 @@ main .top-main .container .btn-blu-after {
   text-transform: uppercase;
   cursor: pointer;
 }
+main .end-main {
+  display: flex;
+  height: 100px;
+  background-color: #0282f9;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main .end-main .container {
+  flex: 1 0 100%;
+  justify-content: space-between;
+}
+main .end-main .container .content-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+main .end-main .container .content-card img {
+  width: 40px;
+}
+main .end-main .container .content-card span {
+  padding-left: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
 
 footer .footer-top {
   background-image: url("../images/footer-bg.jpg");

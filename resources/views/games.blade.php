@@ -1,6 +1,6 @@
 @extends('template.base')
 
-@section('title', 'DC Comics')
+@section('title', 'DC Games')
 
 @section('content')
     <main>

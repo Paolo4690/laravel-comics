@@ -15,8 +15,66 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
     $data = [
         'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/characters', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('characters', $data);
+})->name('characters');
+
+Route::get('/movies', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('movies', $data);
+})->name('movies');
+
+Route::get('/tv', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('tv', $data);
+})->name('tv');
+
+Route::get('/games', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('games', $data);
+})->name('games');
+
+Route::get('/collectibles', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('collectibles', $data);
+})->name('collectibles');
