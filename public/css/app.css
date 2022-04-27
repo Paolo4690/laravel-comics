@@ -97,6 +97,67 @@ header .header-menu ul li a:hover, header .header-menu ul li a.active {
   background-repeat: no-repeat;
 }
 
+main .top-main {
+  display: flex;
+  background-color: #1c1c1c;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+main .top-main .container {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .top-main .container .btn-blu-before {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 160px;
+  height: 35px;
+  background-color: #0282f9;
+  line-height: 35px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main .top-main .container .container-books {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 0 1rem;
+}
+main .top-main .container .container-books .content-book {
+  flex: 0 0 calc(16.6666666667% - 0.8rem);
+  margin: 1rem 0;
+}
+main .top-main .container .container-books .content-book img {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .top-main .container .container-books .content-book h6 {
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+main .top-main .container .btn-blu-after {
+  width: 160px;
+  height: 35px;
+  background-color: #0282f9;
+  line-height: 35px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 footer .footer-top {
   background-image: url("../images/footer-bg.jpg");
   background-position: center top;
