@@ -11,8 +11,10 @@
                     @foreach ($books as $book)
                         {{-- CARD --}}
                         <div class="content-book">
-                            <img src="{{ $book['thumb'] }}" alt="{{ $book['series'] }}">
-                            <h6>{{ $book['series'] }}</h6>
+                            <a href="{{ route('single_comics') }}">
+                                <img src="{{ $book['thumb'] }}" alt="{{ $book['series'] }}">
+                                <h6>{{ $book['series'] }}</h6>
+                            </a>
                         </div>
                         {{-- CARD --}}
                     @endforeach

@@ -9,13 +9,15 @@
                 <div class="btn-blu-before">current series</div>
                 <div class="container-books">
                     @foreach ($books as $book)
-                        {{-- CARD --}}
-                        <div class="content-book">
+                    {{-- CARD --}}
+                    <div class="content-book">
+                        <a href="{{ route('single_comics') }}">
                             <img src="{{ $book['thumb'] }}" alt="{{ $book['series'] }}">
                             <h6>{{ $book['series'] }}</h6>
-                        </div>
-                        {{-- CARD --}}
-                    @endforeach
+                        </a>
+                    </div>
+                    {{-- CARD --}}
+                @endforeach
 
                 </div>
               <div class="btn-blu-after">Load More</div>

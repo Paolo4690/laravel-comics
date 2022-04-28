@@ -24,6 +24,17 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
+Route::get('/comics', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('comics', $data);
+})->name('comics');
+
 Route::get('/characters', function () {
     $books = config('comics');
     $arrSectionBlu =  config('myArr.sectionBlu');
@@ -78,3 +89,15 @@ Route::get('/collectibles', function () {
     ];
     return view('collectibles', $data);
 })->name('collectibles');
+
+
+Route::get('/single_comics', function () {
+    $books = config('comics');
+    $arrSectionBlu =  config('myArr.sectionBlu');
+
+    $data = [
+        'books' => $books,
+        'arrSectionBlu' => $arrSectionBlu
+    ];
+    return view('single_comics', $data);
+})->name('single_comics');

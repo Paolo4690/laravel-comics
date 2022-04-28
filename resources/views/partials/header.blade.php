@@ -16,8 +16,8 @@
             <li class="{{ Route::current()->getName() == 'characters' ? 'active' : '' }}">
                 <a class="{{ Route::current()->getName() == 'characters' ? 'active' : '' }}" href="{{ route('characters') }}">CHARACTERS</a>
             </li>
-            <li class="{{ Route::current()->getName() == 'home' ? 'active' : '' }}">
-                <a class="{{ Route::current()->getName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}">COMICS</a>
+            <li class="{{ Route::current()->getName() == 'comics' ? 'active' : '' }}">
+                <a class="{{ Route::current()->getName() == 'comics' ? 'active' : '' }}" href="{{ route('comics') }}">COMICS</a>
             </li>
             <li class="{{ Route::current()->getName() == 'movies' ? 'active' : '' }}">
                 <a class="{{ Route::current()->getName() == 'movies' ? 'active' : '' }}" href="{{ route('movies') }}">MOVIES</a>
